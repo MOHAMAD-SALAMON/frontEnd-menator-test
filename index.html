@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./assets/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+
+  <!-- 
+  
+  
+  
+  
+
+
+
+
+
+
+   -->
+   <header>
+    <nav class="container">
+      <img src="./images/icon-menu.svg" class="menu">
+      <a href="#"><img src="./images/logo.svg" alt=""></a>
+      <ul>
+        <div class="close"><img src="./images/icon-close.svg"></div>
+        <li><a href="#Collections">Collections</a></li>
+        <li><a href="#Men">Men</a></li>
+        <li><a href="#Women">Women</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <div>
+        <img src="./images/icon-cart.svg" alt="" class="cart">
+        <span class="shaps"></span>
+        <img src="./images/image-avatar.png">
+      </div>
+    </nav>
+   </header>
+   <div class="gray-b"></div>
+   <section class="container" style="position: relative;">
+    <div class="crat-page"></div>
+    <div class="row d-flex align-center">
+    <div class="col-12 col-lg-6">
+      <div class="big-image">
+        <div class="big-image-wrapper swiper-wrapper">
+            <div class="image-show swiper-slide">
+                <a data-fslightbox href="./images/image-product-1.jpg">      
+                    <img src="./images/image-product-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="image-show swiper-slide">
+                <a data-fslightbox href="./images/image-product-2.jpg">      
+                    <img src="./images/image-product-2.jpg" alt="">
+                </a>
+            </div>
+            <div class="image-show swiper-slide">
+                <a data-fslightbox href="./images/image-product-3.jpg">      
+                    <img src="./images/image-product-3.jpg" alt="">
+                </a>
+            </div>
+            <div class="image-show swiper-slide">
+              <a data-fslightbox href="./images/image-product-4.jpg">      
+                  <img src="./images/image-product-4.jpg" alt="">
+              </a>
+          </div>
+        </div>
+        <img src="./images/icon-next.svg"  class="swiper-button-next">
+        <img src="./images/icon-previous.svg"  class="swiper-button-prev">
+    </div>
+    <div thumbSlider="" class="small-image">
+        <ul class="small-image-wrapper flexitem swiper-wrapper">
+            <li class="thumbnail-show swiper-slide">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            </li>
+            <li class="thumbnail-show swiper-slide">
+                <img src="./images/image-product-2-thumbnail.jpg" alt="">
+            </li>
+            <li class="thumbnail-show swiper-slide">
+                <img src="./images/image-product-3-thumbnail.jpg" alt="">
+            </li>
+            <li class="thumbnail-show swiper-slide">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="">
+          </li>
+        </ul>
+    </div>
+    </div>
+    <div class="col-12 col-lg-6 second-section">
+      <span>Sneaker Company</span>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="small-flex">
+          <div class="flex-s">
+          <p>$125.00</p>
+          <span>  50%</span>
+        </div>
+        <span class="shap">$250.00</span>
+      </div>
+        <form>
+          <img class="minus" src="./images/icon-minus.svg">
+          <input value="0" type="text">
+          <img class="plus" src="./images/icon-plus.svg">
+          <button type="button">Add to cart</button>
+        </form>
+    </div>
+  </div>
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js" integrity="sha512-jrYR1cG7wwq2l+uNH+XXF18hjN+j8MBjM2PK2+fV/nAIHKxqpg479rOWFOxTpCnyPMZeGAi+eDAxHyrzTzkyRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./assets/bootstrap.bundle.min.js"></script>
+   <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin-bottom: 20px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 2px solid rgba(138, 135, 135, 0.164);
+    height: 70px;
+}
+ul{
+    position: relative;
+}
+ul li{
+    list-style: none;
+    position: relative;
+}
+ul li:after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: rgb(255, 182, 25);
+    left: 0;
+    bottom: -16px;
+    transition: .3s ease-in-out;
+}
+ul li:hover a{
+    color: rgb(255, 182, 25) !important;
+}
+ul li:hover:after{
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+header nav ul li a{
+    color: rgb(138, 135, 135);
+}
+header nav ul li{
+    margin-top: 20px;
+    margin-right: 60px;
+}
+header nav ul li:first-child{
+    margin-left: 30px;
+}
+header nav>div{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+.shaps{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    background-color: rgb(255, 182, 25);
+    color: white;
+    padding: 0 4px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: block;
+}
+header nav>div img:last-child{
+    width: 50px;
+}
+.big-image {
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2em;
+    object-fit: cover;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thumbnail-show{
+    position: relative;
+    width: 130px;
+    height: 110px;
+    overflow: hidden;
+    margin: 0 2em 2em 0;
+}
+.small-image{
+    width: 90%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+:where(.big-image , .small-image) img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+}
+/* .big-image .image-show:not(:first-child){
+    display: none;
+} */
+.small-image ul{
+    display: flex;
+}
+.second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+.second-section span:first-child{
+    color:rgb(255, 182, 25) ;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin: 10px;
+}
+.second-section h1{
+    line-height: 60px;
+}
+.second-section>p{
+    line-height: 35px;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgba(138, 135, 135, 0.644);
+}
+.second-section .flex-s{
+    display: flex;
+    align-items: center;
+}
+.second-section .flex-s p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.second-section .flex-s span{
+    margin-bottom: 15px;
+    margin-left: 10px;
+    background-color: rgba(250, 199, 90, 0.541) ;
+    color: rgb(255, 182, 25) ;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+.second-section .shap{
+    color:rgba(138, 135, 135, 0.644);
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+form{
+    position: relative;
+}
+form input{
+    width: 150px;
+    outline: 0;
+    border: 0;
+    background-color:rgba(138, 135, 135, 0.226);
+    padding: 10px;
+    border-radius: 6px;
+}
+form input[value]{
+    text-align: center;
+    font-weight: 600;
+}
+.minus{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.plus{
+    position: absolute;
+    top: 50%;
+    left:130px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+button{
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color:rgb(238, 136, 3);
+    padding: 5px 15px;
+    border-radius: 6px;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    background-color:rgba(238, 136, 3, 0.705);
+}
+.cart{
+    cursor: pointer;
+}
+.crat-page{
+    position: absolute;
+    right:0;
+    top: -30px;
+    background-color: white;
+    box-shadow: 2px 2px 7px rgb(102, 102, 102);
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    z-index: 99;
+}
+h3{
+    font-size: 20px;
+    padding: 10px 10px 0px;
+}
+.small{
+    display: flex;
+    align-items: center;
+}
+.small img:first-child{
+    margin-left: 10px;
+    object-fit: contain;
+    border-radius: 5px;
+    width: 50px;
+    margin-right: 10px;
+}
+.small img:last-child{
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.crat-page .paraghraph{
+    color: rgba(138, 135, 135, 0.644);
+    margin: 5%;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.small p{
+    margin-top: 15px;
+    color: rgba(138, 135, 135, 0.644);
+    position: relative;
+}
+.crat-page button{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.crat-page{
+    display: none;
+}
+.crat-page p span{
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    right: 30px;
+}
+.crat-page.visable{
+    display: block;
+}
+.delete{
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+.close{
+    display: none;
+}
+.swiper-button-next , .swiper-button-prev{
+    position: relative;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+img.swiper-button-next , img.swiper-button-prev{
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+.big-image:hover :where(img.swiper-button-next , img.swiper-button-prev){
+    transform: scale(1);
+}
+@media (max-width:991px) {
+    .thumbnail-show{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+    header nav ul{
+        position: absolute;
+        display: block;
+        width: 0;
+        z-index: 400;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        background-color: white;
+        transition: .5s ease-in-out;
+    }
+    header nav ul.active{
+        display: block;
+        position: fixed;
+        width: 300px;
+        z-index: 400;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: white;
+        transition: .5s ease-in-out;
+    }
+    header nav{
+        border-bottom: 0;
+    }
+    section{
+        max-width: 100% !important;
+    }
+    .big-image{
+        width: 100%;
+        margin-top: 0;
+    }
+    .small-image{
+        display: none;
+    }
+    :where(.big-image , .small-image) img{
+        border-radius: 0;
+    }
+    header nav ul li:first-child{
+        margin-left: 0;
+    }
+    header nav ul>div img{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .close{
+        display: block;
+        cursor: pointer;
+    }
+    .gray-b.active{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.575);
+        top: 0;
+        z-index: 200;
+    } 
+    img.swiper-button-next , img.swiper-button-prev{
+        transform: scale(1);
+    }
+    .small-image{
+        width: 100%;
+    }
+    .crat-page{
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        transform: translateX(-50%);
+        background-color: white;
+        box-shadow: 2px 2px 7px rgb(102, 102, 102);
+        width: 300px;
+        height: 220px;
+        border-radius: 6px;
+        z-index: 99;
+    }
+    .small-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .small-flex .shap{
+        margin-top: 10px;
+    }
+    form input{
+        width: 100%;
+    }
+    .minus{
+        position: absolute;
+        top: 22px;
+        left: 2%;
+        cursor: pointer;
+    }
+    .plus{
+        position: absolute;
+        top: 22px;
+        left: 95%;
+        cursor: pointer;
+    }
+    button{
+        margin-left: 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        background-color:rgb(238, 136, 3);
+        padding: 10px 15px;
+        border-radius: 6px;
+        transition: .2s ease-in-out;
+        width: 100%;
+        margin-top: 10px;
+    }
+    header{
+        margin-bottom: 0;
+    }
+}
